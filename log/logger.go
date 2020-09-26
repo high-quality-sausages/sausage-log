@@ -2,8 +2,6 @@ package log
 
 import (
 	"fmt"
-
-	"github.com/xclpkg/clcolor"
 )
 
 type Log struct {
@@ -22,7 +20,7 @@ func Debug(fmtString string, args ...interface{}) {
 }
 
 func Info(fmtString string, args ...interface{}) {
-	fmt.Println(clcolor.Green(fmtString))
+	fmt.Println(fmtString)
 }
 
 func Warn(fmtString string, args ...interface{}) {}
