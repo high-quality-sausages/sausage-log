@@ -6,6 +6,7 @@ import (
 
 type Log struct {
 	Connector
+	Config
 }
 
 type Connector interface {
